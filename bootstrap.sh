@@ -52,11 +52,13 @@ echo -e '\e[32m# sudo apt-get -y install gdebi-core\e[0m'
 echo -e '\e[32m########################################################################\e[0m'
 sudo apt-get install -y gdebi-core
 pushd /tmp
-wget https://download2.rstudio.org/rstudio-server-1.1.453-amd64.deb
+#wget https://download2.rstudio.org/rstudio-server-1.1.453-amd64.deb
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5033-amd64.deb
 echo -e '\e[32m########################################################################\e[0m'
 echo -e '\e[32m# yes|gdebi rstudio-server-1.1.453-amd64.deb\e[0m'
 echo -e '\e[32m########################################################################\e[0m'
-sudo yes|gdebi rstudio-server-1.1.453-amd64.deb
+sudo yes| gdebi rstudio-server-1.2.5033-amd64.deb
+
 popd
 
 ########################################################################
